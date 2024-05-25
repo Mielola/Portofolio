@@ -1,0 +1,115 @@
+/* Buat Another Project */
+.miniProject{
+  height: fit-content;
+  padding-bottom: 5vh;
+  width: auto;
+  background-color: #212020;
+  color: white;
+}
+
+.swiper-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiper-desc h4{
+    font-size: 24px;
+    padding: 30px;
+    opacity: 50%;
+}
+
+.swiper-desc h1{
+    font-size: 36px;
+    width: 60%;
+}
+
+
+/* autoprefixer: off */
+.skill-desc{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-desc h4{
+    font-size: 32px;
+    padding: 30px;
+}
+
+.skill-text{
+    width: 50%;
+}
+
+  .skill-section{
+    height: 70vh;
+    display: flex;
+    background-color: #212020;
+    color: white;
+    
+  }
+
+  .skill-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .skill-body{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    flex-wrap: wrap ;
+    justify-content: center;
+  }
+
+  .skill-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+  }
+
+  .skill-title{
+    display: flex;
+    width: auto;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .proggres-container{
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    
+
+    .skill-section{
+        height: fit-content;
+    }
+
+    .skill-text{
+        width: 500px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .skill-body{
+        flex-direction: column;
+    }
+    .skill-text{
+        width: 300px;
+    }
+  }
+
+
+  
