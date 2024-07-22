@@ -1,13 +1,15 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import cardData from '../Components/cardData';
 import "../style/detailPage.css"
 import Github from '../Assets/img/github-mark.png';
+import Figma from '../Assets/img/figma-Icon.png';
 
 
 export default function DetailPage() {
     const { id } = useParams();
     const project = cardData[id];
+    const nav = useNavigate()
 
     if (!project) {
         return <div>Project not found</div>;
@@ -15,8 +17,9 @@ export default function DetailPage() {
 
     return (
         <section className='container-detailpage'>
+          <button onClick={() => nav("/")}><h2>Kembali</h2></button>
           {/* Image */}
-          <img src={project.banner} className='card-banner'/>
+          <img src={project.image} className='card-banner'/>
 
           <div className='container-detail'>
 
@@ -49,12 +52,16 @@ export default function DetailPage() {
             </div>
 
           </div>
-          
           <div className='container-button'>
             <button><img src={Github}/>Lihat Kode di Github</button>
-            <button style={{backgroundColor: '#5C5470', color: 'white',}}> Lihat Desain di Figma </button>
-
+            <button 
+            style={{
+              backgroundColor: '#5C5470', 
+              color: 'white'
+              }}> <img src={Figma}/> Lihat Desain di Figma 
+            </button>
           </div>
+          
         </section>
     );
 }
