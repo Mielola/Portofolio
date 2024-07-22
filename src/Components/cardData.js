@@ -4,10 +4,10 @@ const cardData = [
         title: "Schedulify",
         subtitle: "Create You ToDo List with Schedulify",
         info:"Schedulify is a website that can help you manage your schedule, whether it's for personal or project purposes.",
-        link: "https://play.google.com/store/apps/editorial?id=mc_games_battlestar_editorial__game_experiment_fcp&gl=MP"
     },
     {
         image: require("../Assets/img/frame2.png"),
+        banner: require("../Assets/img/banner2.png"),
         title: "Healthify",
         subtitle: "The key is to take care of your health.",
         info:"Healthify offers consultations with specialist doctors, pharmacy access, and informative health articlesHealthify offers consultations with specialist doctors, pharmacy access, and informative health articlesHealthify offers consultations with specialist doctors, pharmacy access, and informative health articlesHealthify offers consultations with specialist doctors, pharmacy access, and informative health articles"
