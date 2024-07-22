@@ -1,0 +1,145 @@
+.card-body{
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    border-radius: 10px;
+    position: absolute;
+    background: #0000004f;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    
+}
+
+.card:hover  .card-body {
+    opacity: 100%;
+}
+
+.card{
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+.card-image{
+    object-fit: cover;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+
+.card-title{
+    text-transform: uppercase;
+}
+
+.card-subtitle{
+    font-size: small;
+    font-weight: 300;
+}
+
+.card-info{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: fit-content;
+    overflow: auto;
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+    /* Hide scrollbar for Webkit (Chrome, Safari) */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.card-button{
+    background-color: tomato;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 6vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-button img{
+    width: 15%;
+    object-fit: cover;
+}
+
+.pembungkus{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    gap: 15px 15px;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom:  50px;
+}
+
+@media screen and (max-width: 1320px) {
+    .pembungkus {
+        width: 600px;
+    }
+
+    .card-image{
+        width: 500px;
+    }
+
+    .card-body{
+        width: 500px;
+    }
+    
+    .card-button img{
+    width: 8%;
+    object-fit: cover;
+    }
+
+    .pembungkus{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pembungkus {
+        align-items: center;
+        
+    }
+
+    .card-button img{
+    width: 13%;
+    object-fit: cover;
+}
+
+    .card {
+        width: calc(100% - 20px); /* Mengurangi margin agar sesuai dengan lebar pembungkus */
+        max-width: 350px; /* Atur lebar maksimum kartu agar tidak terlalu melebar */
+    }
+
+    .card-image{
+        width: 350px;
+    }
+
+    .card-body{
+        width: fit-content;
+    }
+
+    @media screen and (max-width: 345px){
+        .pembungkus {
+            width: fit-content;
+        }
+    }
+    
+}

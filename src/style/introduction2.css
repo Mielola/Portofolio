@@ -1,0 +1,49 @@
+.section-container{
+    height: 100vh;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.intro-container{
+    width: 90%;
+    display: flex;
+    background-color: purple;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.intro-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.intro-card h2{
+    font-size: xx-large;
+}
+
+.intro-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 600px;
+    background: url('/src/Assets/img/frame1.png');
+    object-fit: scale-down;
+
+}
+
+.intro-card p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 80%;
+}

@@ -1,0 +1,28 @@
+section{
+    background-color: #1b1b1b;
+}
+
+.vertical-timeline-element-subtitle{
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.vertical-timeline-element-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    gap: 20px;
+}
+
+.experience p {
+    width: 70%;
+}

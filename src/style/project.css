@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+
+.space{
+    background-color: #1B1B1B;
+    color: tomato;
+    text-align: center;
+}
+
+.space p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.myProject{
+    background-color: #1B1B1B;
+    color: white;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center ;
+    
+    
+}
+
+.subJudul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: fit-content;
+}
+
+.project-title{
+    font-size: 32px;
+    line-height: 70px;
+    opacity: 60%;
+}
+
+.containerButton{
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+li{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1320px) {
+    .subJudul{
+        width: 350px;
+    }
+    
+    .project-subtitle{
+        width: 450px;
+    }
+
+    .myProject{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .subJudul{
+        width: 350px;
+    }
+
+    .project-subtitle{
+        width: 350px;
+    }
+}
+

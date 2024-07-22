@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile{
+    width: 25%;
+    margin-top: 100px;
+}
+
+html{
+    overflow-x:hidden ;
+}
+
+.PrimaryJudul, .aboutMe{
+    color: white;
+}
+
+.PrimaryJudul{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro{
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: baseline;
+    
+}
+
+.myBg {
+    height: 100vh;
+    background: url('/src/Assets/img/kopi.png');
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role{
+    opacity: 80%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+.aboutMe{
+    opacity: 50%;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+/* autoprefixer: off */
+.container{
+    width: fit-content;
+   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button-body{
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+}
+
+.button-download {
+    background-color: #ff6347;
+    color: white;
+    font-weight: 600;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-download:hover{
+    background-color: rgb(205, 78, 55);
+}
+
+.button-more {
+    padding: 15px 45px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-weight: bolder;
+    border: white 1px;
+    font-size: 16px;
+    border-style: ridge;
+}
+
+.role-container{
+    color: white;
+    width: 172vh;
+    padding-bottom: 50px;
+    justify-content: start;
+    display: flex;
+    gap: 90px;
+}
+
+.role-body{
+    width: 250px;
+}
+
+.role-title{
+    width: content;
+    margin-bottom: 10px;
+}
+
+.role-info{
+    font-weight: 100;
+    width: 300px;
+}
+
+.name{
+    color: #ff6347;
+}
+
+@media screen and (max-width: 1400px) {
+    .role-container{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    .intro {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .profile{
+        width: 50%;
+        
+    }
+
+    .role-container{
+        width: 900px;
+        align-items: center;
+        padding-left: 50px;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: hidden;
+        margin-bottom: 50px;
+    }
+
+    .role-info{
+        width: 250px;
+    }
+
+    .container{
+        gap: 30px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  .role-container{
+    width: 500px;
+    padding: 0 0 40px 0;
+    justify-content: start;
+    margin-bottom: 0px;
+  }
+
+  .role-body{
+    animation: slide 20s alternate infinite;
+    width: fit-content;
+  }
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+  
+  .slide-animation {
+    animation: slide 10s alternate infinite;
+  }
