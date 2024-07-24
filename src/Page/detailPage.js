@@ -48,13 +48,14 @@ export default function DetailPage() {
             <div className='container-header'>
               <h1>Job Desk </h1> 
               <br />
-              <p>{project.info}</p>
+              <p>{project.job}</p>
             </div>
 
           </div>
           <div className='container-button'>
             <button><img src={Github}/>Lihat Kode di Github</button>
             <button 
+            onClick={project.linkfigma}
             style={{
               backgroundColor: '#5C5470', 
               color: 'white'
